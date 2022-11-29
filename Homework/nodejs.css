@@ -13,6 +13,15 @@ body{
     background-color: #090c15;
     color: #fff;
 }
+a:hover{
+    text-decoration: underline;
+}
+header a::before{
+    content: "| ";
+}
+footer nav a::before{
+    content: "| ";
+}
 header{
     width: 100%;
     height: 150px;
@@ -40,6 +49,70 @@ main{
     text-align: center;
     margin: auto;
     padding: auto;
+    padding-top: 10px;
+}
+main #mainTitle{
+    padding: 25px;
+    font-size: 14pt;
+}
+main h2{
+    padding: 10px;
+    font-size: 20pt;
+}
+main div{
+    display: grid;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 290px;
+}
+main .home-downloadButton a:hover{
+    background-color: #84ba64;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+main div a{
+    background-color: #026e00;
+    display: block;
+    margin: 8px 4px;
+    padding: 0.2em 0.6em;
+    color: #fff !important;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+main div a small{
+    font-size: 12pt;
+}
+main div ul li{
+    display: inline-block;
+    list-style-type: disc;
+    cursor: pointer;
+    padding: 5px 5px;
+    color: #84ba64;
+    font-size: 10pt;
+}
+main div ul li::before{
+    content: "| ";
+}
+main div ul li:hover{
+    text-decoration: underline;
+}
+main p{
+    padding: 10px;
+    position: static;
+}
+main p a{
+    cursor: pointer;
+    color: #84ba64;
+}
+main p a:hover{
+    background-color: #84ba64;
+    color: #fff;
+    border-radius: 5px;
+    margin: auto;
 }
 footer{
     width: 100%;
@@ -77,13 +150,5 @@ footer nav{
 footer nav a{
     color: rgb(173, 216, 230);
     font-size: 15px;
-}
-a:hover{
-    text-decoration: underline;
-}
-header a::before{
-    content: "|";
-}
-footer nav a::before{
-    content: "|";
+    padding: 2px;
 }
